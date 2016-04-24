@@ -1,10 +1,9 @@
+<h2 id="title">Artists</h2>
+
 <ul>
-	
-{{#each model as |artist|}}
-  <li>	
-	{{artist.name}}
-  </li> 	
-{{/each}}
-
-
+  {{#each model as |artist|}}
+    <li>  
+      {{#link-to 'artist' artist.id}}{{artist.name}}{{/link-to}}
+    </li>   
+  {{/each}}
 </ul>
